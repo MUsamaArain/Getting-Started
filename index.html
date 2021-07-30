@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Getting Started With GitHub</title>
+	<script type="text/javascript"> 
+	function display_c(){
+		var refresh=1000; // Refresh rate in milli seconds
+		mytime=setTimeout('display_ct()',refresh)
+	}
+	function display_ct() {
+		var x = new Date()	
+		document.getElementById('ct').innerHTML = x;
+		display_c();
+	}
+</script>
+</head>
+<body onload="display_ct()">
+	<div>
+		<div>
+			<h1 style="font-family: sans-serif;">
+				Welcome, 
+				<span style="color: red; text-transform: uppercase;">Usama Arain</span>
+			</h1>
+		</div>	
+		<div style="width: 100%;  padding: 170px 0; text-align: center;">
+			<h2 style="font-family: sans-serif; color: orange;">
+				<span id='ct'></span>
+			</h2>
+		</div>	
+	</div>
+</body>
+</html>
